@@ -1,0 +1,429 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  max-width:100vw !important;
+}
+
+.herosection{
+  
+}
+
+.nav_background{
+  background-color: #d2e4f4;
+}
+
+
+.icons{
+  font-size: 3rem;
+  color: #3a7aff;
+  transition: all 0.4s linear;
+}
+
+.Slider{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.block_work{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 10px;
+  
+}
+.work_blocks{
+  transition: all 0.4s linear;
+}
+
+.work_blocks p{
+  transition: all 0.4s linear;
+}
+
+.work_blocks:hover{
+  background-color: #106eea;
+  color: white;
+}
+
+.work_blocks:hover p{
+  color: white;
+}
+
+.work_blocks:hover .icons{
+  color: white;
+}
+
+.background{
+  background-color: #f1f6fe;
+}
+
+.icons-about{
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  font-size: 60px;
+  padding: 14px;
+  margin-right: 15px;
+  color: #106eea;
+  border-radius: 50px;
+}
+.card_services{
+  text-align: center;
+  border: 1px solid #e2eefd;
+  padding: 29px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+} 
+
+.Clients_block{
+  width: 25%;
+}
+
+.icons_client{
+    font-size: 3rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: #106eea;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5rem;
+}
+
+.icons-service{
+  background: #f1f6fe;
+  /* box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12); */
+  font-size: 60px;
+  padding: 14px;
+  margin-right: 15px;
+  color: #106eea;
+  border-radius: 4px;
+  border: 0.5px solid #deebfd;
+  transition:all 0.3s linear;
+}
+
+.card_services:hover{
+    box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+    color: #106eea;
+}
+
+.card_services:hover .icons-service{
+  border: 0.5px solid #106eea;
+
+}
+
+.price_color{
+    margin: -34px -193px 20px -194px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accordians{
+  width: 88vw;
+}
+
+.contact{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+.icons_contact{
+    font-size: 4rem;
+    border: 0.5px dotted;
+    color: #3b82f6;
+    border-width: 4px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.icons_footer{
+    font-size: 15px;
+    color: blue;
+}
+
+.icons_socialmedia{
+    font-size: 2rem;
+    padding: 4px;
+    padding: 7px;
+    background-color: #5399f1;
+    border-radius: 30%;
+    color: white;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card Image {
+  position: absolute;
+  z-index: 3;
+  scale: 0.8;
+  opacity: 0.25;
+  transition: 0.5s;
+}
+
+.card:hover Image {
+  scale: 0.5;
+  opacity: 0.9;
+  transform: translateY(-70px);
+}
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 25px;
+}
+
+.card:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.content .sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 3px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  position: relative;
+  text-decoration: none;
+  color:aliceblue;
+  background:#106eea;
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+  padding: 0.5rem;
+}
+
+.content .scis {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.scis li a {
+  position: relative;
+  text-decoration: none;
+  color:rgb(39, 39, 39);
+  background:#ffffff;
+  fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+  padding: 1rem;
+}
+
+.scis li a:hover {
+  fill: currentColor;
+  color: rgba(255, 255, 255, 1);
+  background-color: #106eea;
+}
+
+.sci li a:hover {
+  fill: currentColor;
+  color: rgba(255, 255, 255, 1);
+  background-color: #106eea;
+}
+
+
+@media screen and (max-width:850px) {
+
+  .client_logo{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    place-items: center;
+  }
+
+  .price_website{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .herosection{
+    height: 100vh;
+  }
+
+  .whatwework_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about_blocks{
+    flex-direction: column;
+  }
+  .services_blocks{
+    grid-template-columns: 1fr 1fr;
+  }
+  .teams_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .portfolio_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .third_row_portfolio{
+    display: contents;
+  }
+
+  .clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map_contact{
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Clients_block{
+    width:auto;
+  }
+
+  .icons_of_contact{
+    flex-direction: column;
+  }
+
+  .footer_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .social_navbar{
+    display: none;
+  }
+  .contact_navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .upper_navbar{
+    display: none;
+  }
+
+  .price_website{
+    grid-template-columns: 1fr;
+  }
+
+  .whatweworkpage{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .whatwework_blocks{
+    grid-template-columns: 1fr;
+  }
+
+  .About{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about_blocks{
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .services_blocks{
+    grid-template-columns: 1fr;
+  }
+  .teams_blocks{
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio_blocks{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .icons_of_contact{
+    flex-direction: column;
+  }
+
+  .Clients{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .clients{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer_blocks{
+    grid-template-columns: 1fr;
+  }
+  .contact_section_block{
+    flex-direction: column;
+  }
+  
+
+  .map{
+    display: none;
+  }
+}
